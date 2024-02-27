@@ -1,0 +1,172 @@
+[gd_scene load_steps=2 format=3 uid="uid://doro12kb7i3b0"]
+
+[ext_resource type="Script" path="res://Scripts/settings.gd" id="1_ldkr5"]
+
+[node name="Settings" type="CanvasLayer"]
+script = ExtResource("1_ldkr5")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Left" type="VBoxContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Center" type="VBoxContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Top" type="BoxContainer" parent="Control/HBoxContainer/Center"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Center" type="BoxContainer" parent="Control/HBoxContainer/Center"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 2.5
+
+[node name="Panel" type="Panel" parent="Control/HBoxContainer/Center/Center"]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/HBoxContainer/Center/Center/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Left" type="BoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Center" type="BoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BoxContainer" type="BoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BoxContainer2" type="VBoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="SettingsLabrl" type="Label" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+size_flags_stretch_ratio = 0.5
+text = "settings"
+horizontal_alignment = 1
+uppercase = true
+
+[node name="HSeparator" type="HSeparator" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+
+[node name="VolumeLabel" type="Label" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Volume"
+horizontal_alignment = 1
+
+[node name="SlideVolume" type="HSlider" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="MusicLabel" type="Label" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Music"
+horizontal_alignment = 1
+
+[node name="SliderMusic" type="HSlider" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="sfxLabel" type="Label" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "SFX"
+horizontal_alignment = 1
+
+[node name="SliderSFX" type="HSlider" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="VoiceLabel" type="Label" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+text = "Voice"
+horizontal_alignment = 1
+
+[node name="SliderVoice" type="HSlider" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 6
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fullscreen"
+horizontal_alignment = 2
+
+[node name="BoxContainer" type="BoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.15
+
+[node name="CheckBox" type="CheckBox" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+
+[node name="Return" type="Button" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+text = "RETURN"
+
+[node name="BoxContainer3" type="BoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Right" type="BoxContainer" parent="Control/HBoxContainer/Center/Center/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Bottom" type="BoxContainer" parent="Control/HBoxContainer/Center"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Right" type="VBoxContainer" parent="Control/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="toggled" from="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2/HBoxContainer/CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="pressed" from="Control/HBoxContainer/Center/Center/Panel/HBoxContainer/Center/HBoxContainer/BoxContainer2/Return" to="." method="_on_return_pressed"]

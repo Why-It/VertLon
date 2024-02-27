@@ -1,0 +1,190 @@
+[gd_scene load_steps=2 format=3 uid="uid://vevmodsqifaw"]
+
+[ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_a3da3"]
+
+[node name="Main Menu" type="Node2D"]
+script = ExtResource("1_a3da3")
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="Base" type="Control" parent="GUI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VerticalArrangment" type="HBoxContainer" parent="GUI/Base"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Left" type="VBoxContainer" parent="GUI/Base/VerticalArrangment"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Center" type="VBoxContainer" parent="GUI/Base/VerticalArrangment"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/Base/VerticalArrangment/Center"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="BoxContainer" type="BoxContainer" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="Label" type="Label" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "VerLon"
+horizontal_alignment = 1
+
+[node name="Continue" type="Button" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Continue"
+
+[node name="Play" type="Button" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Play"
+
+[node name="Settings" type="Button" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Settings"
+
+[node name="Credits" type="Button" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Credits"
+
+[node name="Exit" type="Button" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Exit"
+
+[node name="BoxContainer2" type="BoxContainer" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="BoxContainer2" type="BoxContainer" parent="GUI/Base/VerticalArrangment/Center/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Right" type="VBoxContainer" parent="GUI/Base/VerticalArrangment"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="pop-up" type="Control" parent="GUI"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VerticalArrangment" type="HBoxContainer" parent="GUI/pop-up"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Left" type="VBoxContainer" parent="GUI/pop-up/VerticalArrangment"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Center" type="VBoxContainer" parent="GUI/pop-up/VerticalArrangment"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/pop-up/VerticalArrangment/Center"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Top" type="BoxContainer" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+alignment = 1
+
+[node name="BoxContainer" type="BoxContainer" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+alignment = 1
+
+[node name="Panel" type="Panel" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+text = "Are you sure you want to quit to desktop?"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer/Panel/VBoxContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="no" type="Button" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer/Panel/VBoxContainer/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(50, 25)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "NO"
+
+[node name="yes" type="Button" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer/Panel/VBoxContainer/VBoxContainer2/HBoxContainer"]
+custom_minimum_size = Vector2(50, 25)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "YES"
+
+[node name="Bottom" type="BoxContainer" parent="GUI/pop-up/VerticalArrangment/Center/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Right" type="VBoxContainer" parent="GUI/pop-up/VerticalArrangment"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[connection signal="pressed" from="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="GUI/Base/VerticalArrangment/Center/VBoxContainer/HBoxContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer/Panel/VBoxContainer/VBoxContainer2/HBoxContainer/no" to="." method="_on_no_pressed"]
+[connection signal="pressed" from="GUI/pop-up/VerticalArrangment/Center/VBoxContainer/HBoxContainer/BoxContainer/Panel/VBoxContainer/VBoxContainer2/HBoxContainer/yes" to="." method="_on_yes_pressed"]
